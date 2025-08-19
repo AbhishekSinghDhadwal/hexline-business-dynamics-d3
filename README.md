@@ -2,6 +2,7 @@
 
 An interactive D3.js visualization that lets you explore the CORGIS Business Dynamics dataset across US states. The left panel renders a labeled US **hex map** with a color legend. The right panel shows a **multi-line chart** for any states you lasso-select on the map. A year slider, scale toggle, and play control make temporal patterns easy to scan.
 
+To see the application live, click [here](https://abhisheksinghdhadwal.github.io/hexline-business-dynamics-d3/) !
 
 ![Output](./op.gif)
 ## Demo highlights
