@@ -1,0 +1,101 @@
+/* anthropic es-que fonts */
+/* inspo for the entire site is Anthropic :) */
+@font-face {
+    font-family: 'Tiempos';
+    src: url('fonts/TestTiemposText-Medium-BF66457a508489a.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+@font-face {
+    font-family: 'Copernicus';
+    src: url('fonts/CopernicusNewCondTrial-110-BF6616045000e13.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #eeece2; 
+    color: #3d3929;            
+} 
+  
+.btn-primary {
+    background-color: #bd5d3a;
+    border-color: #bd5d3a;
+}
+
+.btn-primary:hover {
+    background-color: #a94f2f;
+    border-color: #a94f2f;
+}
+
+h1, h2, h3, h4, h5, h6, .headline, .subheading {
+    color: #da7756; 
+    font-family: 'Copernicus', sans-serif;
+}
+
+body, p, .body-text {
+    font-family: 'Tiempos', serif;
+}
+
+#lasso {
+    stroke: black;
+    stroke-width: 2px;
+    fill: rgba(0, 0, 0, 0.33);
+}
+
+.selected_hex {
+    stroke: black; 
+    stroke-width: 3px;
+}
+
+/* making the borders for both panels the same */
+#hex-map-panel .border, 
+#line-chart-panel .border {
+  height: 520px; 
+}
+
+/* changes color for the slider thumb - derived from https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/ */
+input[type="range"].form-range::-webkit-slider-thumb {
+    background-color: #da7756; 
+}
+
+.form-check-input:checked {
+    background-color: #da7756; 
+    border-color: #da7756;
+}
+
+/* extra - tooltip icon work */
+.tooltip-icon {
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #999;
+    border-radius: 50%;
+    padding: 0 6px;
+    display: inline-block;
+    line-height: 1;
+    margin-left: 6px;
+    background-color: #f1f1f1;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #fff8f1; 
+    border: 1px solid #da7756; 
+    border-radius: 6px;
+    padding: 8px 10px;
+    color: #3d3929; 
+    font-family: 'Tiempos', serif;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    max-width: 250px;
+    z-index: 1000; /* workaround */
+}
+
+#control-panel {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
